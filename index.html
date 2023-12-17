@@ -4,26 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUGIG</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Scrollable Webpage with CSS Grid</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
+</body>
 
-<body>
-    <div class="container100">
-        <!-- header start -->
-        <div class="header">
-            <p class="logo-text">SUGIG</p>
-        </div>
-
-        <!-- main content start -->
-        <div class="main-content">
-            <h3>SUGIG – СУГИГ – Srpsko Udruženje za Geometriju i Grafiku </h3>
-            <h4> O NAMA </h4>
-            <p>Srpsko udruženje za geometriju i grafiku (SUGIG) okuplja naučnike i stručnjake sa područja Srbije koji se bave geometrijom i grafikom u inženjerskim i dizajnerskim profesijama. Nastalo je na temelju nekadašnjeg Jugoslovenskog Udruženja za Nacrtnu geometriju i Inženjersku Grafiku (JUNGIG), koje je okupljalo naučni, stručni i nastavni kadar sa područja čitave bivše Jugoslavije.
-                <br><br>
-                Udruženje je 1997. preimenovano u Udruženje za Nacrtnu Geometriju Inženjersku Grafiku (UNGIG – SCG). Današnji naziv Udruženja usvojen je na Skupštini održanoj 21. 04. 2009. U Vrnjačkoj Banji.</p>
+<!-- HEADER -->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">SUGIG</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#onama">O nama</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#dela">Delatnost</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
         </div>
     </div>
-</body>
+</nav>
+<!-- CONTENT single column in a row-->
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-8 bg-secondary-subtle">
+            <p class="text-warning text-center fs-2">
+                SUGIG - СУГИГ <br> Srpsko Udruženje za Geometriju i Grafiku
+            </p>
+            <hr>
+            <p class="text-warning text-center fs-3" id="onama"> O NAMA</p>
+            <p>Srpsko udruženje za geometriju i grafiku (SUGIG) okuplja naučnike i stručnjake sa područja Srbije koji se
+                bave geometrijom i grafikom u inženjerskim i dizajnerskim profesijama. Nastalo je na temelju nekadašnjeg
+                Jugoslovenskog Udruženja za Nacrtnu geometriju i Inženjersku Grafiku (JUNGIG), koje je okupljalo naučni,
+                stručni i nastavni kadar sa područja čitave bivše Jugoslavije. <br><br>
+                Udruženje je 1997. preimenovano u Udruženje za Nacrtnu Geometriju Inženjersku Grafiku (UNGIG - SCG).
+                Današnji naziv Udruženja usvojen je na Skupštini održanoj 21. 04. 2009. U Vrnjačkoj Banji.
+            </p>
+            <p>
+                Dosadašnji predsednici, hronološkim redom, bili su:
+            <ul>
+                <li>1997-2000. dr Hranislav Anđelković (GAF, Niš)</li>
+                <li>1997-2000. dr Hranislav Anđelković (GAF, Niš)</li>
+                <li>2002-2004. dr. Aleksandar Čučaković (Građevinski fakultet, Beograd)</li>
+                <li>2004-2006. dr Radovan Štulić (FTN, Novi Sad)</li>
+                <li>2006-2008. dr Biserka Marković (GAF, Niš)</li>
+                <li>2008-2010. dr Branislav Popkonstantinović (Mašinski fakultet, Beograd) </li>
+                <li>2010-2012. dr Ratko Obradović (FTN, Novi Sad)</li>
+                <li>2012-2014. dr Sonja Krasić. (GAF, Niš)</li>
+                <li>2014-2016. dr Marija Obradović (Građevinski fakultet, Beograd) </li>
+                <li>2016-2018. dr Vesna Stojaković (FTN, Novi Sad)</li>
+                <li>2018- dr Zorana Jeli (Mašinski fakultet, Beograd)</li>
+            </ul>
+            </p>
+
+            <hr>
+            <!-- DELATNOST -->
+            <p class="text-warning text-center fs-3" id="dela">
+                DELATNOST
+            </p>
+
+            <p>Srpsko udruženje za geometriju i grafiku (SUGIG) nastoji da svojom aktivnošću unapredi naučnu delatnost iz oblasti geometrije (posebno nacrtne geometrije), inženjerske, odn. kompjuterske grafike, kao i srodnih oblasti vizuelnih komunikacija, kao i da podstakne razvoj kadrova, sa ciljem da doprinose kulturnom i naučnom nivou srpske društvene zajednice kroz:</p>
+            <ul>
+                <li>organizovanje naučno-stručnih skupova u cilju razmene iskustava i razvijanja stručne i naučne misli u području geometrije i grafike</li>
+                <li>organizovanje i drugih stručnih i naučnih skupova, seminara, tečajeva, predavanja i sl. u cilju osposobljavanja i razvijanja kadrova za geometriju i grafiku, kao i za razvoj samih disciplina</li>
+                <li>preduzimanje konkretnih aktivnosti za stručno i naučno obrazovanje kadrova u odgovarajućim institucijama nadležnim za nastavu geometrije i grafike</li>
+                <li>izdavanje stručnih i naučnih publikacija, saopštenja i dr. radi osiguravanja bolje informisanosti u području geometrije i grafike</li>
+                <li>upoznavanje šire javnosti sa delatnošću Udruženja preko javnih sredstava informisanja</li>
+                <li>organizovanje zajedničkih akcija i razvijanje trajne saradnje sa odgovarajućim društvenim organima, organizacijama i stručnim udruženjima.</li>
+            </ul> <hr>
+        </div>
+    </div>
+</div>
 
 </html>
